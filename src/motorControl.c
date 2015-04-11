@@ -8,8 +8,13 @@
 #define motorR2 4
 
 void delay100(int n){
-    for (int i=0;i<n;i++)
-        for(int j=0;j<100;j++)
+    int i,j,k;
+    for (i=0;i<n;i++)
+        for(j=0;j<100;j++)
+        {
+            k+=1；
+            k-=1;
+        }
 }
 void motorControl_init(){
     wiringPiSetup();
