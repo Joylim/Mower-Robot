@@ -7,7 +7,7 @@
 #define motorR1 3
 #define motorR2 4
 
-void delay(int n){
+void delay100(int n){
     for (int i=0;i<n;i++)
         for(int j=0;j<100;j++)
 }
@@ -23,31 +23,31 @@ void motorControl_init(){
     digitalWrite(motorL2,LOW);
     digitalWrite(motorR1,LOW);
     digitalWrite(motorR2,LOW);
-    delay(10);
+    delay100(10);
 }
 
 void leftForward(){
     digitalWrite(motorL1,HIGH);
     digitalWrite(motorL2,LOW);
-    delay(10);
+    delay100(10);
 }
 
 void rightForward(){
     digitalWrite(motorR1,HIGH);
     digitalWrite(motorR2,LOW);
-    delay(10);
+    delay100(10);
 }
 
 void leftBack(){
     digitalWrite(motorL1,LOW);
     digitalWrite(motorL2,HIGH);
-    delay(10);
+    delay100(10);
 }
 
 void rightBack(){
     digitalWrite(motorR1,LOW);
     digitalWrite(motorR2,HIGH);
-    delay(10);
+    delay100(10);
 }
 //function
 
@@ -55,28 +55,28 @@ void robotForward(){
     motorControl_init();
     leftForward();
     rightForward();
-    delay(10);
+    delay100(10);
 }
 
 void robotBack(){
     motorControl_init();
     leftBack();
     rightBack();
-    delay(10);
+    delay100(10);
 }
 
 void robotLeft(){
     motorControl_init();
     leftBack();
     rightForward();
-    delay(10);
+    delay100(10);
 }
 
 void robotRight(){
     motorControl_init();
     leftForward();
     rightBack();
-    delay(10);
+    delay100(10);
 }
 
 int main()
