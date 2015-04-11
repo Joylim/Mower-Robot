@@ -1,0 +1,2 @@
+gcc(g++) -Wall -o ** **.c -lwiringPi
+:w !sudo tee % > /dev/null
