@@ -12,8 +12,8 @@ void delay100(int n){
     for (i=0;i<n;i++)
         for(j=0;j<100;j++)
         {
-            k+=1；
-            k-=1;
+            k = k + 1;
+            k = k - 1;
         }
 }
 void motorControl_init(){
