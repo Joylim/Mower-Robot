@@ -109,9 +109,9 @@ void robotRun(){
     else if(1==LEFT)
 	robotLeft();
     else if(1==RIGHT)
-	robotRIGHT();
+	robotRight();
     else if(1==BACK)
-	robotBck();
+	robotBack();
     FORWARD = 0;
     BACK = 0;
     LEFT = 0;
