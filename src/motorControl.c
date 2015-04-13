@@ -7,6 +7,26 @@
 #define motorR1 3
 #define motorR2 4
 
+/*
+  direction control
+  LEFT: means turn left
+  RIGHT: means turn right
+  BACK: means move back
+  FORWARD: means move forward
+*/
+int LEFT = -1;
+int RIGHT = -1;
+int BACK = -1;
+int FORWARD = -1;
+
+/*
+  speed control
+  SLOW: means move SLOWLY
+  FAST: means move fast
+*/
+int SLOW = -1;
+int FAST = -1;
+
 void delay100(int n){
     int i,j,k;
     for (i=0;i<n;i++)
@@ -83,10 +103,46 @@ void robotRight(){
     rightBack();
     delay100(10);
 }
+void robotRun(){
+    if(1==FORWARD)
+	robotForward();
+    else if(1==LEFT)
+	robotLeft();
+    else if(1==RIGHT)
+	robotRIGHT();
+    else if(1==BACK)
+	robotBck();
+    FORWARD = 0;
+    BACK = 0;
+    LEFT = 0;
+    RIGHT = 0;
+}
+void robotStop(){
+    digitalWrite(motorL1,LOW);
+    digitalWrite(motorL2,LOW);
+    digitalWrite(motorR1,LOW);
+    digitalWrite(motorR2,LOW);
+}
+
+void test1();
 
 int main()
 {
-    robotForward();
-    sleep(200);
+    
+    test1();
     return 0;
+}
+void test1(){
+    FORWARD = 1;
+    robotRun();
+    sleep(100);
+    LEFT = 1;
+    robotRun();
+    sleep(10);
+    BACK = 1;
+    robotRun();
+    sleep(10);
+    FORWARD = 1;
+    sleep(100);
+    robotStop();
 }
