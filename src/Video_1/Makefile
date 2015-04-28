@@ -1,12 +1,11 @@
 INCLUDE = $(shell pkg-config --cflags opencv)
 LIBS = $(shell pkg-config --libs opencv)
-SOURCE = Video.cpp Decision.cpp
 
-OBJS = $(SRCS:.cpp=.o)
+SOURCE = edge.cpp
 
-INC = -I./Command -I./Decision
+OBJS = $(SOURCE:.cpp=.o)
 
-TARGET = video
+TARGET = test
 $(TARGET):$(OBJS)
 	g++ -o $(TARGET) $(OBJS) -I $(INCLUDE) $(LIBS)
 $(OBJS):$(SOURCE)
@@ -14,4 +13,4 @@ $(OBJS):$(SOURCE)
 clean:
 	rm $(OBJS) $(TARGET)
 %.o:%.cpp
-	g++ -I $(INCLUDE) $(INC) $(LIBS) -o $@ -C $<
+	g++ -I $(INCLUDE) -o $@ -C $<

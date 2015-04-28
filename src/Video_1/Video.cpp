@@ -2,13 +2,17 @@
 //并在检测到边缘时向机器人发送指令;
 //本程序可对摄像头获取的视频进行实时处理，也可以读取
 //录制完毕的视频文件，进行后处理
-#include <cv.h>
-#include <highgui\highgui.hpp>
-#include <cxcore.h>
+//#include <cv.h>
+//#include <highgui\highgui.hpp>
+//#include <cxcore.h>
+#include <opencv2/core/core.hpp>  
+#include <opencv2/imgproc/imgproc.hpp>  
+#include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 #include<sstream>
 #include<cstring>
-#include"Command.h"
+
+//#include"Command.h"
 
 using namespace cv;
 using namespace std;
@@ -37,12 +41,12 @@ static void helpInfo()
 //定义滑动条回调函数
 void onTrackBar(int a)
 {
-	cvCanny(frame2,frame4,(double)a,(double)a*3,3);
+	Canny(frame2,frame4,(double)a,(double)a*3,3);
 	cvShowImage("canny",frame4);
 }
 
 //定义子线程，用于向机器人发送控制指令
-Command order;
+//Command order;
 
 //主线程，用于执行边缘检测和草坪边缘识别,
 int main(int argc,char**argv)
@@ -106,8 +110,8 @@ int main(int argc,char**argv)
 			mat1=cvCreateMat(frame1->height,frame1->width,CV_32FC1);
 
 			//转化为单通道图像进行处理
-			cvCvtColor(frame1,frame2,CV_RGB2GRAY);
-			cvCvtColor(frame1,frame3,CV_RGB2GRAY);
+			cvtColor(frame1,frame2,CV_RGB2GRAY);
+			cvtColor(frame1,frame3,CV_RGB2GRAY);
 
 			cvConvert(frame2,mat1);
 			cvConvert(frame2,mat2);
@@ -115,14 +119,14 @@ int main(int argc,char**argv)
 		}
 		else
 		{
-			cvCvtColor(frame1,frame2,CV_RGB2GRAY);
+			cvtColor(frame1,frame2,CV_RGB2GRAY);
 			cvConvert(frame2,mat1);
 			//高斯平滑滤波器
 			cvSmooth(mat1,mat1,CV_BLUR,4,0,0,0);
 			//当前帧与背景图相减
 			cvAbsDiff(mat1,mat2,mat3);
 			//二值化前景图
-			cvThreshold(mat3,frame3,60,255.0,CV_THRESH_BINARY);
+			//cv::cvThreshold(mat3,frame3,60,255.0,CV_THRESH_BINARY);
 			//滤波去噪音
 			cvErode(frame3,frame3,0,1);
 			//背景更新移动平均？？
@@ -176,9 +180,9 @@ int main(int argc,char**argv)
 			if(grass_rate>=thresholdRate)
 			{
 				cout<<"You are on the boarder,sir."<<endl;
-				order.start("Turn left and get way from the boarder.");
-				order.sleep(100);
-				order.wait();
+			//	order.start("Turn left and get way from the boarder.");
+			//	order.sleep(100);
+			//	order.wait();
 			}
 
 			//显示其余的图像

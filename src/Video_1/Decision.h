@@ -2,7 +2,7 @@
 #ifndef _DECISION_H
 #define _DECISION_H
 
-#include<windows.h>
+//#include<windows.h>
 
 static unsigned int __stdcall threadFunction(void *);
 
