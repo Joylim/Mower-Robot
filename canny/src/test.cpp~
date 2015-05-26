@@ -1,0 +1,34 @@
+#include <string>
+#include <opencv2/opencv.hpp>
+#include "opencv2/video/tracking.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "edgedetect/EdgeDetect.h"
+#include <fstream>
+using namespace std;
+using namespace cv;
+int main() {
+	ifstream fin;
+	fin.open("../setting/setting.txt");
+	
+        string s = "sb/Image_";
+        int i = 50 ;
+        Mat frame;
+        Mat m;
+        Mat g;
+        EdgeDetect detector(640, 480, 20, 0.4, 0.4);
+        bool** result = NULL;
+        while (i < 171){
+                ostringstream ss;
+                ss << i;
+                string name = s + ss.str() + ".jpg";
+                frame = imread(name);
+                cout << name << endl;
+                cvtColor(frame, g, CV_BGR2GRAY);
+                detector.detect(g, result);
+                detector.paint(frame, result);
+                imshow("canny", frame);
+                i++;
+                waitKey(0);
+        }
+}

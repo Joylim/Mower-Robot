@@ -1,0 +1,8 @@
+#prefix of the image file name
+prefix Image_
+#type of the image file
+ext jpg
+#start index of image file for test
+start 50
+#end index of image file for test
+tail 171
