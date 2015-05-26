@@ -16,10 +16,13 @@ $make
 关于图片文件名格式在setting/setting.txt文件中
 
 $cd bin
+
 $./canny
 
-##3 类接口
+按空格键依次处理图片
+
+
+##3 类函数接口
 
 详见src/edgedetect/EdgeDetect.h中的注释
 
-按空格键依次处理图片
