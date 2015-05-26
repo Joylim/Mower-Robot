@@ -29,8 +29,8 @@ void rightBack();
 
 void robotForward();
 void robotBack();
-void robotLeft();
-void robotRight();
+void robotLeft(int ang);
+void robotRight(int ang);
 
 
 //void robotRun();

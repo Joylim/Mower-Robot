@@ -1,4 +1,21 @@
 #include "motorControl.h"
+//#include <softPwm.h>
+
+/*
+  TODO: ADD SPEED CONTROL BY USING PWM
+  int softPwmCreate(int pin, int initialVal,int pwmRange);
+  if return 0  :success
+  void softPwmWrite(int pin, int value);
+  update PWM value
+  an example:
+  pinMode(GPIO1,OUTPUT);
+  digitalWrite(GPIO1,LOW);
+  softPwmCreate(GPIO1,0,200);//basic pulse unit is 100 micro 200*100=20ms
+  softPWMWrite(GPIO1,15);
+  compile: cc -o * *.cpp -lwiringPi -lpthread
+  
+*/
+
 
 void delay100(int n){
     int i,j,k;
@@ -8,6 +25,19 @@ void delay100(int n){
             k++;
             k--;
         }
+}
+void delay10000(int n){
+   int i,j,k;
+   for(i = 0;i<n;i++)
+      for(j = 0;j<10000;j++)
+       {
+           k++;
+           k--;
+       }
+}
+void delaySec(int n){
+    for(int i = 0;i<n;i++)
+	delay(1000);
 }
 
 void motorControl_init(){
@@ -74,18 +104,21 @@ void robotBack(){
     delay100(10);
 }
 
-void robotLeft(){
+void robotLeft(int ang){
     motorClear();
     leftBack();
     rightForward();
-    delay100(10);
+    delay10000(ang*30);
+    motorClear();
 }
 
-void robotRight(){
+
+void robotRight(int ang){
     motorClear();
     leftForward();
     rightBack();
-    delay100(10);
+    delay10000(50*ang);
+    motorClear();
 }
 
 void robotPause(){
@@ -104,10 +137,40 @@ void robotStart(){
     motorControl_init();
 }
 
+//SPEED CONTROL
+//test
+void test()
+{
+   robotStart();
+   delay(20);
+   //forward 8s
+   robotForward();
+   delaySec(3);
+   robotStop();
+   delaySec(1);
+   robotLeft(90);
+   robotStop();
+   delaySec(1);
+   robotForward();
+   delaySec(3);
+   robotStop();
+   delaySec(1);
+   robotLeft(90);
+   robotStop();
+   delaySec(1);
+   robotForward();
+   delaySec(3);
+   robotStop();
+   delaySec(1);
+   robotLeft(90);
+   robotStop();
+   delaySec(1);
+   robotForward();
+   delaySec(3);
+   robotStop();
+}
 int main()
 {
-  robotStart();
-  robotBack();
-  robotStop();
+  test();
   return 0;
 }
