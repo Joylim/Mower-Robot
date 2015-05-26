@@ -27,7 +27,7 @@ int main() {
  	int count = 0;
 	while (count<MAX) {
 		Mat cameraFrame;
-		string s1="./img/";
+		string s1="/home/huangyao/projects/Mower-Robot/img/";
 		string s2;
 		s2 = num2str(count);
 		string s3 = s1+s2+".jpg";
@@ -36,7 +36,8 @@ int main() {
 		stream1.read(cameraFrame);
 		imwrite(imgName, cameraFrame);
 		count = count + 1;
-		usleep(1500);
+		for(int j=0;j<1000;j++)
+			usleep(1000);
 		if (waitKey(30) >= 0)
 			break;
 	}
