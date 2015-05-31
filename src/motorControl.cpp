@@ -169,8 +169,3 @@ void test()
    delaySec(3);
    robotStop();
 }
-int main()
-{
-  test();
-  return 0;
-}
