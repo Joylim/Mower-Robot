@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl
+CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl/build
+CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl2/build
 
 #=============================================================================
 # Directory level rules for directory lib
@@ -76,7 +76,7 @@ lib/preinstall:
 lib/CMakeFiles/motorcontrol.dir/all:
 	$(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/depend
 	$(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles  1
 	@echo "Built target motorcontrol"
 .PHONY : lib/CMakeFiles/motorcontrol.dir/all
 
@@ -86,9 +86,9 @@ all: lib/CMakeFiles/motorcontrol.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/motorcontrol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/motorcontrol.dir/rule
 
 # Convenience name for target.
@@ -111,7 +111,7 @@ clean: lib/CMakeFiles/motorcontrol.dir/clean
 lib/CMakeFiles/motorcontrol_static.dir/all:
 	$(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/depend
 	$(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles  2
 	@echo "Built target motorcontrol_static"
 .PHONY : lib/CMakeFiles/motorcontrol_static.dir/all
 
@@ -121,9 +121,9 @@ all: lib/CMakeFiles/motorcontrol_static.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/motorcontrol_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/motorcontrol_static.dir/rule
 
 # Convenience name for target.

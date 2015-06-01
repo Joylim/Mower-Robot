@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.cpp" "/home/pi/lab511/Mower-Robot/motorControl/build/lib/CMakeFiles/motorcontrol_static.dir/motorControl.o"
+  "/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp" "/home/pi/lab511/Mower-Robot/motorControl2/build/lib/CMakeFiles/motorcontrol_static.dir/motorcontrol.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

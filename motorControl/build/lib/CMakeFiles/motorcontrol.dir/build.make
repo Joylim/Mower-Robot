@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl
+CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl/build
+CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl2/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/motorcontrol.dir/depend.make
@@ -49,42 +49,42 @@ include lib/CMakeFiles/motorcontrol.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/motorcontrol.dir/flags.make
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.o: lib/CMakeFiles/motorcontrol.dir/flags.make
-lib/CMakeFiles/motorcontrol.dir/motorControl.o: ../lib/motorControl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/motorcontrol.dir/motorControl.o"
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/motorcontrol.dir/motorControl.o -c /home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.cpp
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.o: lib/CMakeFiles/motorcontrol.dir/flags.make
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.o: ../lib/motorcontrol.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/motorcontrol.dir/motorcontrol.o"
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/motorcontrol.dir/motorcontrol.o -c /home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorcontrol.dir/motorControl.i"
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.cpp > CMakeFiles/motorcontrol.dir/motorControl.i
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorcontrol.dir/motorcontrol.i"
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp > CMakeFiles/motorcontrol.dir/motorcontrol.i
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorcontrol.dir/motorControl.s"
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.cpp -o CMakeFiles/motorcontrol.dir/motorControl.s
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorcontrol.dir/motorcontrol.s"
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp -o CMakeFiles/motorcontrol.dir/motorcontrol.s
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.o.requires:
-.PHONY : lib/CMakeFiles/motorcontrol.dir/motorControl.o.requires
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.requires:
+.PHONY : lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.requires
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.o.provides: lib/CMakeFiles/motorcontrol.dir/motorControl.o.requires
-	$(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorControl.o.provides.build
-.PHONY : lib/CMakeFiles/motorcontrol.dir/motorControl.o.provides
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.provides: lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.requires
+	$(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.provides.build
+.PHONY : lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.provides
 
-lib/CMakeFiles/motorcontrol.dir/motorControl.o.provides.build: lib/CMakeFiles/motorcontrol.dir/motorControl.o
+lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.provides.build: lib/CMakeFiles/motorcontrol.dir/motorcontrol.o
 
 # Object files for target motorcontrol
 motorcontrol_OBJECTS = \
-"CMakeFiles/motorcontrol.dir/motorControl.o"
+"CMakeFiles/motorcontrol.dir/motorcontrol.o"
 
 # External object files for target motorcontrol
 motorcontrol_EXTERNAL_OBJECTS =
 
-lib/libmotorcontrol.so.1.0: lib/CMakeFiles/motorcontrol.dir/motorControl.o
+lib/libmotorcontrol.so.1.0: lib/CMakeFiles/motorcontrol.dir/motorcontrol.o
 lib/libmotorcontrol.so.1.0: lib/CMakeFiles/motorcontrol.dir/build.make
 lib/libmotorcontrol.so.1.0: lib/CMakeFiles/motorcontrol.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libmotorcontrol.so"
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motorcontrol.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libmotorcontrol.so.1.0 libmotorcontrol.so.1 libmotorcontrol.so
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motorcontrol.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libmotorcontrol.so.1.0 libmotorcontrol.so.1 libmotorcontrol.so
 
 lib/libmotorcontrol.so.1: lib/libmotorcontrol.so.1.0
 
@@ -94,14 +94,14 @@ lib/libmotorcontrol.so: lib/libmotorcontrol.so.1.0
 lib/CMakeFiles/motorcontrol.dir/build: lib/libmotorcontrol.so
 .PHONY : lib/CMakeFiles/motorcontrol.dir/build
 
-lib/CMakeFiles/motorcontrol.dir/requires: lib/CMakeFiles/motorcontrol.dir/motorControl.o.requires
+lib/CMakeFiles/motorcontrol.dir/requires: lib/CMakeFiles/motorcontrol.dir/motorcontrol.o.requires
 .PHONY : lib/CMakeFiles/motorcontrol.dir/requires
 
 lib/CMakeFiles/motorcontrol.dir/clean:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/motorcontrol.dir/cmake_clean.cmake
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/motorcontrol.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/motorcontrol.dir/clean
 
 lib/CMakeFiles/motorcontrol.dir/depend:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/lab511/Mower-Robot/motorControl /home/pi/lab511/Mower-Robot/motorControl/lib /home/pi/lab511/Mower-Robot/motorControl/build /home/pi/lab511/Mower-Robot/motorControl/build/lib /home/pi/lab511/Mower-Robot/motorControl/build/lib/CMakeFiles/motorcontrol.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/lab511/Mower-Robot/motorControl2 /home/pi/lab511/Mower-Robot/motorControl2/lib /home/pi/lab511/Mower-Robot/motorControl2/build /home/pi/lab511/Mower-Robot/motorControl2/build/lib /home/pi/lab511/Mower-Robot/motorControl2/build/lib/CMakeFiles/motorcontrol.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/motorcontrol.dir/depend
 

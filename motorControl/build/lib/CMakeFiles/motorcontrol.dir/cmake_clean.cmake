@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/motorcontrol.dir/motorControl.o"
+  "CMakeFiles/motorcontrol.dir/motorcontrol.o"
   "libmotorcontrol.pdb"
   "libmotorcontrol.so"
   "libmotorcontrol.so.1.0"

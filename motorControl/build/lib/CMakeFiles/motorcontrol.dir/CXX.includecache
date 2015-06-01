@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.cpp
-motorControl.h
-/home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.h
-
-/home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.h
+/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp
 wiringPi.h
 -
 unistd.h
 -
+motorControl.h
+/home/pi/lab511/Mower-Robot/motorControl2/lib/motorControl.h
 

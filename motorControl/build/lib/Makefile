@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl
+CMAKE_SOURCE_DIR = /home/pi/lab511/Mower-Robot/motorControl2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl/build
+CMAKE_BINARY_DIR = /home/pi/lab511/Mower-Robot/motorControl2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles /home/pi/lab511/Mower-Robot/motorControl/build/lib/CMakeFiles/progress.marks
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl/build/CMakeFiles 0
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles /home/pi/lab511/Mower-Robot/motorControl2/build/lib/CMakeFiles/progress.marks
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/lab511/Mower-Robot/motorControl2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/motorcontrol.dir/rule:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol.dir/rule
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol.dir/rule
 .PHONY : lib/CMakeFiles/motorcontrol.dir/rule
 
 # Convenience name for target.
@@ -150,12 +150,12 @@ motorcontrol: lib/CMakeFiles/motorcontrol.dir/rule
 
 # fast build rule for target.
 motorcontrol/fast:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/build
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/build
 .PHONY : motorcontrol/fast
 
 # Convenience name for target.
 lib/CMakeFiles/motorcontrol_static.dir/rule:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol_static.dir/rule
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/motorcontrol_static.dir/rule
 .PHONY : lib/CMakeFiles/motorcontrol_static.dir/rule
 
 # Convenience name for target.
@@ -164,26 +164,26 @@ motorcontrol_static: lib/CMakeFiles/motorcontrol_static.dir/rule
 
 # fast build rule for target.
 motorcontrol_static/fast:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/build
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/build
 .PHONY : motorcontrol_static/fast
 
 # target to build an object file
-motorControl.o:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorControl.o
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorControl.o
-.PHONY : motorControl.o
+motorcontrol.o:
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorcontrol.o
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorcontrol.o
+.PHONY : motorcontrol.o
 
 # target to preprocess a source file
-motorControl.i:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorControl.i
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorControl.i
-.PHONY : motorControl.i
+motorcontrol.i:
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorcontrol.i
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorcontrol.i
+.PHONY : motorcontrol.i
 
 # target to generate assembly for a file
-motorControl.s:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorControl.s
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorControl.s
-.PHONY : motorControl.s
+motorcontrol.s:
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol.dir/build.make lib/CMakeFiles/motorcontrol.dir/motorcontrol.s
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(MAKE) -f lib/CMakeFiles/motorcontrol_static.dir/build.make lib/CMakeFiles/motorcontrol_static.dir/motorcontrol.s
+.PHONY : motorcontrol.s
 
 # Help Target
 help:
@@ -199,9 +199,9 @@ help:
 	@echo "... motorcontrol"
 	@echo "... motorcontrol_static"
 	@echo "... rebuild_cache"
-	@echo "... motorControl.o"
-	@echo "... motorControl.i"
-	@echo "... motorControl.s"
+	@echo "... motorcontrol.o"
+	@echo "... motorcontrol.i"
+	@echo "... motorcontrol.s"
 .PHONY : help
 
 
@@ -213,6 +213,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/lab511/Mower-Robot/motorControl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/lab511/Mower-Robot/motorControl2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

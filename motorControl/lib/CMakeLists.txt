@@ -1,4 +1,4 @@
-SET(LIBMOTORCONTROL_SRC motorControl.cpp)
+SET(LIBMOTORCONTROL_SRC motorcontrol.cpp)
 ADD_LIBRARY(motorcontrol SHARED ${LIBMOTORCONTROL_SRC})
 ADD_LIBRARY(motorcontrol_static STATIC ${LIBMOTORCONTROL_SRC})
 
@@ -12,4 +12,4 @@ INSTALL(TARGETS motorcontrol motorcontrol_static
 	LIBRARY DESTINATION lib
 	ARCHIVE DESTINATION lib)
 
-INSTALL(FILES motorControl.h DESTINATION include/motorControl)
+INSTALL(FILES motorcontrol.h DESTINATION include)

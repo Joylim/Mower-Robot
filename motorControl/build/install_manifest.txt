@@ -2,4 +2,4 @@
 /usr/local/lib/libmotorcontrol.so.1
 /usr/local/lib/libmotorcontrol.so
 /usr/local/lib/libmotorcontrol.a
-/usr/local/include/motorControl/motorControl.h
+/usr/local/include/motorcontrol.h

@@ -1,2 +1,2 @@
-/home/pi/lab511/Mower-Robot/motorControl/build/lib/CMakeFiles/motorcontrol.dir
-/home/pi/lab511/Mower-Robot/motorControl/build/lib/CMakeFiles/motorcontrol_static.dir
+/home/pi/lab511/Mower-Robot/motorControl2/build/lib/CMakeFiles/motorcontrol.dir
+/home/pi/lab511/Mower-Robot/motorControl2/build/lib/CMakeFiles/motorcontrol_static.dir

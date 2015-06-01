@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/lab511/Mower-Robot/motorControl/lib
+# Install script for directory: /home/pi/lab511/Mower-Robot/motorControl2/lib
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,9 +46,9 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     ENDIF()
   ENDFOREACH()
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/pi/lab511/Mower-Robot/motorControl/build/lib/libmotorcontrol.so.1.0"
-    "/home/pi/lab511/Mower-Robot/motorControl/build/lib/libmotorcontrol.so.1"
-    "/home/pi/lab511/Mower-Robot/motorControl/build/lib/libmotorcontrol.so"
+    "/home/pi/lab511/Mower-Robot/motorControl2/build/lib/libmotorcontrol.so.1.0"
+    "/home/pi/lab511/Mower-Robot/motorControl2/build/lib/libmotorcontrol.so.1"
+    "/home/pi/lab511/Mower-Robot/motorControl2/build/lib/libmotorcontrol.so"
     )
   FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmotorcontrol.so.1.0"
@@ -65,10 +65,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/lab511/Mower-Robot/motorControl/build/lib/libmotorcontrol.a")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/lab511/Mower-Robot/motorControl2/build/lib/libmotorcontrol.a")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/motorControl" TYPE FILE FILES "/home/pi/lab511/Mower-Robot/motorControl/lib/motorControl.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
