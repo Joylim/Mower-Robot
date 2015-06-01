@@ -1,5 +1,0 @@
-/usr/local/lib/libmotorcontrol.so.1.0
-/usr/local/lib/libmotorcontrol.so.1
-/usr/local/lib/libmotorcontrol.so
-/usr/local/lib/libmotorcontrol.a
-/usr/local/include/motorcontrol.h

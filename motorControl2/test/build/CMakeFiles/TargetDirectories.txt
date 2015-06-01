@@ -1,1 +1,0 @@
-/home/pi/lab511/Mower-Robot/motorControl2/test/build/src/CMakeFiles/main.dir
