@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.cpp
+wiringPi.h
+-
+unistd.h
+-
+motorcontrol.h
+/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.h
+
+/home/pi/lab511/Mower-Robot/motorControl2/lib/motorcontrol.h
+
