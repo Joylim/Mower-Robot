@@ -9,7 +9,6 @@ CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/calib3d/c
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/contrib/contrib.hpp
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/contrib/openfabmap.hpp
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/contrib/retina.hpp
-CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/core/eigen.hpp
@@ -66,6 +65,7 @@ CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/video/bac
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/video/tracking.hpp
 CMakeFiles/mowerRobot.dir/src/EdgeDetect.o: /usr/local/include/opencv2/video/video.hpp
 
+CMakeFiles/mowerRobot.dir/src/board_detect.o: ../src/motorControl.h
 CMakeFiles/mowerRobot.dir/src/board_detect.o: ../src/EdgeDetect.h
 CMakeFiles/mowerRobot.dir/src/board_detect.o: ../src/board_detect.cpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv/cv.h
@@ -76,7 +76,6 @@ CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/calib3d
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/contrib/contrib.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/contrib/openfabmap.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/contrib/retina.hpp
-CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/core/eigen.hpp
@@ -132,4 +131,5 @@ CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/photo/p
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/video/background_segm.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/video/tracking.hpp
 CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/opencv2/video/video.hpp
+CMakeFiles/mowerRobot.dir/src/board_detect.o: /usr/local/include/wiringPi.h
 

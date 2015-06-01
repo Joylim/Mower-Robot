@@ -1,1 +1,1 @@
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/build/CMakeFiles/mowerRobot.dir
+/home/pi/lab511/Mower-Robot/build/CMakeFiles/mowerRobot.dir

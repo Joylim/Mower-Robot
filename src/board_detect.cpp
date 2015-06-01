@@ -6,8 +6,8 @@
 #include <string>
 #include <fstream>
 #include "EdgeDetect.h"
-//#include <wiringPi.h>
-#include "motorControl.h"
+#include <wiringPi.h>
+#include <motorControl.h>
 
 using namespace std;
 using namespace cv;

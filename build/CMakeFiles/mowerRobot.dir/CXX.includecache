@@ -6,25 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/EdgeDetect.cpp
+../src/motorControl.h
+wiringPi.h
+-
+unistd.h
+-
+
+/home/pi/lab511/Mower-Robot/src/EdgeDetect.cpp
 EdgeDetect.h
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/EdgeDetect.h
+/home/pi/lab511/Mower-Robot/src/EdgeDetect.h
 cv.hpp
 -
 
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/EdgeDetect.h
+/home/pi/lab511/Mower-Robot/src/EdgeDetect.h
 string
 -
 opencv2/opencv.hpp
 -
 opencv2/video/tracking.hpp
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/opencv2/video/tracking.hpp
+/home/pi/lab511/Mower-Robot/src/opencv2/video/tracking.hpp
 opencv2/imgproc/imgproc.hpp
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/opencv2/imgproc/imgproc.hpp
+/home/pi/lab511/Mower-Robot/src/opencv2/imgproc/imgproc.hpp
 opencv2/highgui/highgui.hpp
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/opencv2/highgui/highgui.hpp
+/home/pi/lab511/Mower-Robot/src/opencv2/highgui/highgui.hpp
 
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/board_detect.cpp
+/home/pi/lab511/Mower-Robot/src/board_detect.cpp
 cv.hpp
 -
 opencv2/opencv.hpp
@@ -40,7 +46,11 @@ string
 fstream
 -
 EdgeDetect.h
-/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/EdgeDetect.h
+/home/pi/lab511/Mower-Robot/src/EdgeDetect.h
+wiringPi.h
+-
+motorControl.h
+-
 
 /usr/local/include/opencv/cv.h
 opencv2/core/core_c.h
@@ -85,8 +95,6 @@ opencv2/core/core.hpp
 /usr/local/include/opencv2/calib3d/opencv2/core/core.hpp
 opencv2/features2d/features2d.hpp
 /usr/local/include/opencv2/calib3d/opencv2/features2d/features2d.hpp
-opencv2/core/affine.hpp
-/usr/local/include/opencv2/calib3d/opencv2/core/affine.hpp
 
 /usr/local/include/opencv2/contrib/contrib.hpp
 opencv2/core/core.hpp
@@ -122,10 +130,6 @@ valarray
 opencv2/core/core.hpp
 /usr/local/include/opencv2/contrib/opencv2/core/core.hpp
 valarray
--
-
-/usr/local/include/opencv2/core/affine.hpp
-opencv2/core/core.hpp
 -
 
 /usr/local/include/opencv2/core/core.hpp
@@ -188,8 +192,6 @@ tmmintrin.h
 smmintrin.h
 -
 nmmintrin.h
--
-immintrin.h
 -
 immintrin.h
 -
@@ -815,4 +817,6 @@ opencv2/video/tracking.hpp
 /usr/local/include/opencv2/video/opencv2/video/tracking.hpp
 opencv2/video/background_segm.hpp
 /usr/local/include/opencv2/video/opencv2/video/background_segm.hpp
+
+/usr/local/include/wiringPi.h
 

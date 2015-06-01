@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/EdgeDetect.cpp" "/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/build/CMakeFiles/mowerRobot.dir/src/EdgeDetect.o"
-  "/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/src/board_detect.cpp" "/home/huangyao/research/Lab511/mowerRobot/Mower-Robot/build/CMakeFiles/mowerRobot.dir/src/board_detect.o"
+  "/home/pi/lab511/Mower-Robot/src/EdgeDetect.cpp" "/home/pi/lab511/Mower-Robot/build/CMakeFiles/mowerRobot.dir/src/EdgeDetect.o"
+  "/home/pi/lab511/Mower-Robot/src/board_detect.cpp" "/home/pi/lab511/Mower-Robot/build/CMakeFiles/mowerRobot.dir/src/board_detect.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
