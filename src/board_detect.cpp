@@ -34,6 +34,7 @@ CvMat *cannyMat=NULL;
 CvVideoWriter *write1=0;
 //initialize the camera
 CvCapture* pCapture=NULL;
+Mat cameraFrame;
 //initialize the parameters of the detector
 EdgeDetect detector(640, 480, 20, 0.4, 0.4);
 
@@ -54,11 +55,12 @@ int main(int argc,char *argv[])
 	int frameIndex=0;
 	/*Initialize the camera and capture the image*/
 	ImageCapture(0);
-	OpenWindow();
+	//OpenWindow();
 	
 	while(priImage=cvQueryFrame(pCapture))
 	{
 		frameIndex++;
+		//cout<<"frameIndex: "<<frameIndex<<endl;
 		/*work state and memory initialization*/
 		if(frameIndex==1)
 		{
@@ -75,7 +77,7 @@ int main(int argc,char *argv[])
 				break;
 		}
 		SaveImage(priImage,grayImage,cannyImage,frameIndex);
-		cvWriteFrame(write1,priImage);
+		//cvWriteFrame(write1,priImage);
 	}
 	ReleaseALL();
 	return 0;
@@ -93,25 +95,29 @@ void ImageCapture(int device_index)
 	}
 	if(argNum==1)
 	{
-		pCapture=cvCaptureFromCAM(device_index);
+		pCapture = cvCaptureFromCAM(device_index);
+		//cap.read(cameraFrame);
 	}
 	priImage=cvQueryFrame(pCapture);
-	write1=cvCreateVideoWriter("E:\\img\\video_grass.avi",-1,15,cvSize(640,480),1);
+	//write1=cvCreateVideoWriter("..\..\img\\video_grass.avi",-1,15,cvSize(640,480),1);
 }
 
+/*
 void OpenWindow()
 {
 	cvNamedWindow("priImage",1);
 	cvNamedWindow("grayImage",1);
-	/*cvNamedWindow("cannyImage",1);*/
+	cvNamedWindow("cannyImage",1);
 
 	cvMoveWindow("priImage",0,0);
 	cvMoveWindow("grayImage",300,0);
-	/*cvMoveWindow("cannyImage",600,0);*/
+	//cvMoveWindow("cannyImage",600,0);
 }
+*/
 
 bool** Edge_Detect()
 {
+	//cout<<"Edge_Dect(): "<<endl;
 	if(grayImage==NULL)
 	{
 		cerr<<"error initilization."<<endl;
@@ -139,13 +145,14 @@ bool** Edge_Detect()
 
 	
 	Mat c(priImage,true);
-	ShowImage();
-
+	//ShowImage();
+	//cout<<"Edge_Dect finished"<<endl;
 	return result;
 }
 
 void IsBoarder()
 {
+	//cout<<"IsBoarder()"<<endl;
 	if(grass_rate<0.05)
 	{
 		TURN_BACK;
@@ -167,9 +174,9 @@ void IsBoarder()
 
 void ShowImage()
 {
-	cvShowImage("priImage",priImage);
-	cvShowImage("grayImage",grayImage);
-	/*cvShowImage("cannyImage",cannyImage);*/
+	//cvShowImage("priImage",priImage);
+	//cvShowImage("grayImage",grayImage);
+	//cvShowImage("cannyImage",cannyImage);
 }
 
 void InitializeImage()
@@ -186,14 +193,14 @@ void InitializeImage()
 
 	cvConvert(grayImage,priMat);
 	cvConvert(grayImage,grayMat);
-	/*cvConvert(grayImage,cannyMat);*/
+	//cvConvert(grayImage,cannyMat);
 }
 
 void SaveImage(IplImage *priImage,IplImage *grayImage,IplImage *cannyImage,int frameIndex)
 {
-	string priImageName="";
-	string grayImageName="";
-	string cannyImageName="";
+	string priImageName = "";
+	string grayImageName = "";
+	string cannyImageName = "";
 	
 	stringstream pri_sstr;
 	stringstream gray_sstr;

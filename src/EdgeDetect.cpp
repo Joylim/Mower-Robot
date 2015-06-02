@@ -123,7 +123,7 @@ void EdgeDetect::detect(cv::Mat gray, bool**& result)
 {
         cv::Canny(gray, mat, 40, 120,3);
         cv::threshold(mat, mat, 40, 255, cv::THRESH_BINARY);
-		imshow("mat",mat);
+		//imshow("mat",mat);
 		int mm=0;
         search(mm);
 		cout<<"mm= "<<mm<<endl;
